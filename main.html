@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARISIXSCraft</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at bottom, #2a0054, #000);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden; /* Чтобы видео не выходило за пределы экрана */
+        }
+
+        /* Видео на заднем фоне */
+        video.background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(8px); /* Размытие фона */
+            z-index: -1; /* Помещаем видео на задний план */
+            pointer-events: none; /* Запрещаем взаимодействие с видео */
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .rules {
+            margin-top: 30px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .rules h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .rules ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rules li {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted playsinline>
+        <source src="Relax.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    
+    <div class="container">
+        <h1>ARISIXSCraft</h1>
+        <p>Это Minecraft проект, посвящённый выживанию на ванильной версии 1.21.4. Здесь вы сможете построить свой собственный город, присоединиться к другим игрокам или просто создать уютный дом и найти новых друзей.</p>
+        <div class="buttons">
+            <a href="https://discord.gg/V3suca6Kqs" class="btn">Присоединяйтесь к Discord</a>
+            <a href="https://t.me/NOVIADIMHOK" class="btn">Мой Telegram</a>
+        </div>
+        <div class="rules">
+            <h2>Правила</h2>
+            <ul>
+                <li>Когда зайдете на сервер Discord и пройдете верификацию, обязательно прочитайте правила сервера и правила Minecraft сервера.</li>
+                <li>Незнание правил не освобождает от ответственности.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
